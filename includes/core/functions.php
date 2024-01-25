@@ -11,14 +11,14 @@ function init_classes() {
 function init_controllers_common() {
     $includes_dir = opendir('./includes/controllers_common');
     while (($inc_file = readdir($includes_dir)) != false) {
-        if (strstr($inc_file, '.php')) require('./includes/controllers_common/'.$inc_file);
+        if (strstr($inc_file, '.php')) require_once('./includes/controllers_common/'.$inc_file);
     }
 }
 
 function init_controllers_call() {
     $includes_dir = opendir('./includes/controllers_call');
     while (($inc_file = readdir($includes_dir)) != false) {
-        if (strstr($inc_file, '.php')) require('./includes/controllers_call/'.$inc_file);
+        if (strstr($inc_file, '.php')) require_once('./includes/controllers_call/'.$inc_file);
     }
 }
 

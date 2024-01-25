@@ -1,0 +1,37 @@
+<div class="modal_head">
+    <i class="icon_close" onclick="common.modal_hide()"></i>
+</div>
+<div class="modal_body transition_color">
+    <div class="input_group_modal">
+		<label for="dlr_first_name">First name</label>
+        <input date-input="first_name" id="dlr_first_name" type="text" value="{$user.first_name}">
+		<div date-error="first_name" class="bl_error anim_horizont"></div>
+    </div>
+    <div class="input_group_modal">
+		<label for="dlr_last_name">Last name</label>
+        <input date-input="last_name" id="dlr_last_name" type="text" value="{$user.last_name}">
+		<div date-error="last_name" class="bl_error anim_horizont"></div>
+    </div>
+	<div class="input_group_modal">
+		<label for="dlr_phone">Phone</label>
+        <input date-input="phone" id="dlr_phone" type="text" value="{$user.phone}">
+		<div date-error="phone" class="bl_error anim_horizont"></div>
+    </div>
+	<div class="input_group_modal">
+		<label for="dlr_email">Email</label>
+        <input date-input="email" id="dlr_email" type="text" value="{$user.email}">
+		<div date-error="email" class="bl_error anim_horizont"></div>
+    </div>
+	<div class="input_group_modal">
+		<label for="dlr_plots">Plots</label>
+        <input id="dlr_plots" type="text" value="{$user.plot_id}">
+    </div>
+    <div class="modal_controls">
+        <div>
+            <div class="btn_modal" onclick="common.editUserSend({$user.id});">Save</div>
+        </div>
+        <div>
+            <div class="btn_modal light" onclick="common.modal_hide();">Cancel</div>
+        </div>
+    </div>
+</div>
